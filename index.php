@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
 	<?php
-		if(has_posts()):
-			while(has_posts()): the_post(); ?>
+		if(have_posts()):
+			while(have_posts()): the_post(); ?>
 				<h3><?php the_title();?></h3>
 				<small>Posted on: <?php the_time('F j, Y');?> at <?php the_time('g:i a');?>, in <?php the_category();?></small>
 
