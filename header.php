@@ -9,3 +9,6 @@
 	<body>
 		
 <?php wp_nav_menu(array('theme_location'=>'primary')); ?>
+
+<img src="<?php header_iamge();?>" height="<?php echo get_custom_header()->height;?>"
+	width="<?php echo get_custom_header()->width;?>" alt="" />
