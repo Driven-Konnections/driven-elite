@@ -67,6 +67,6 @@ function driv_elite_theme_widget_setup() {
 			'before_title'  => '<h1 class="widget-title">',
 			'after_title'   => '</h1>',
 		)
-	)
+	);
 }
 add_action('widgets_init', 'driv_elite_theme_widget_setup');
