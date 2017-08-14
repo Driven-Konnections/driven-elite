@@ -37,9 +37,9 @@ add_action('init', 'driv_elite_theme_setup');
 
 
 /*
-	==================
+	========================
 	Theme Support Functions
-	==================
+	========================
 */
 add_theme_support('title-tag');
 add_theme_support('custom-background');
@@ -48,3 +48,25 @@ add_theme_support('post-thumbnails');
 add_theme_support('custom-logo');
 add_theme_support('html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
 add_theme_support('post-formats', array('aside', 'gallery', 'image', 'video'));
+
+/*
+	========================
+	Sidebar Functions
+	========================
+*/
+
+function driv_elite_theme_widget_setup() {
+	register_sidebar(
+		array(
+			'name' 	=>	'sidebar',
+			'id' 	=>	'sidebar-1',
+			'class'	=>	'custom',
+			'description'	=>	'Standard Sidebar',
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</aside>',
+			'before_title'  => '<h1 class="widget-title">',
+			'after_title'   => '</h1>',
+		)
+	)
+}
+add_action('widgets_init', 'driv_elite_theme_widget_setup');
