@@ -6,8 +6,14 @@
 
 get_header(); ?>
 
-<h3>SERVICES PAGE</H3>
+<div class="row">
+    <div class="col-xs-12 col-sm-4">
+        <h3>SERVICES PAGE</H3>
+    </div>
 
-<?php get_sidebar(); ?>
+    <div class="col-xs-12 col-sm-4">
+        <?php get_sidebar(); ?>
+    </div>
+</div>
 
 <?php get_footer(); ?>
