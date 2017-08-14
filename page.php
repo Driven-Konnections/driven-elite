@@ -7,7 +7,7 @@
 get_header(); ?>
 
 <div class="row">
-	<div class="col-xs-12 col-sm-4">
+	<div class="col-xs-12 col-sm-8">
 		<h3>BASIC PAGE</H3>
 	</div>
 
