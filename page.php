@@ -1,13 +1,19 @@
 <?php 
 
 /*
-    Template Name: Basic Page Template
+	Template Name: Basic Page Template
 */
 
 get_header(); ?>
 
-<h3>BASIC PAGE</H3>
+<div class="row">
+	<div class="col-xs-12 col-sm-4">
+		<h3>BASIC PAGE</H3>
+	</div>
 
-<?php get_sidebar(); ?>
+	<div class="col-xs-12 col-sm-4">
+		<?php get_sidebar(); ?>
+	</div>
+</div>
 
 <?php get_footer(); ?>
